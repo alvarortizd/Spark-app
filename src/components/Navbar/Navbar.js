@@ -35,22 +35,14 @@ const NavBar = () => {
           <Button
             color="inherit"
             component={Link}
-            to="/team"
-            selected={location.pathname === "/team"}
+            to="/potd"
+            selected={location.pathname === "/potd"}
           >
-            Team
-          </Button>
-          <Button
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            onClick={toggleDrawer}
-          >
-            History
+            Picture Of TheDay
           </Button>
         </Toolbar>
       </AppBar>
-      <HistoryDrawer toggleDrawer={toggleDrawer} openDrawer={openDrawer}/>
+      
     </React.Fragment>
   );
 };
